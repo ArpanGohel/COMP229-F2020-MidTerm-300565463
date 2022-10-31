@@ -26,7 +26,7 @@ router.get('/', (req, res, next) => {
 router.get('/add', (req, res, next) => {
 
     /*****************
-     * ADD CODE HERE *
+     * ADDED CODE HERE *
      *****************/
     let books = require('../models/books');
      res.render('books/details', {title: 'Add a book', books});
@@ -36,7 +36,7 @@ router.get('/add', (req, res, next) => {
 router.post('/add', (req, res, next) => {
 
     /*****************
-     * ADD CODE HERE *
+     * ADDED CODE HERE *
      *****************/
     console.log(req);
     let newBook = book({
@@ -63,7 +63,7 @@ router.post('/add', (req, res, next) => {
 router.get('/:id', (req, res, next) => {
 
     /*****************
-     * ADD CODE HERE *
+     * ADDED CODE HERE *
      *****************/
     let id = req.params.id;
 
@@ -84,7 +84,7 @@ router.get('/:id', (req, res, next) => {
 router.post('/:id', (req, res, next) => {
 
     /*****************
-     * ADD CODE HERE *
+     * ADDED CODE HERE *
      *****************/
     let id = req.params.id;
     console.log(req);
@@ -114,7 +114,7 @@ router.post('/:id', (req, res, next) => {
 router.get('/delete/:id', (req, res, next) => {
 
     /*****************
-     * ADD CODE HERE *
+     * ADDED CODE HERE *
      *****************/
     let id = req.params.id;
 
